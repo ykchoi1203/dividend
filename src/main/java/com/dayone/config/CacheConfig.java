@@ -38,7 +38,7 @@ public class CacheConfig {
 
     @Bean
     public RedisConnectionFactory redisConnectionFactory() {
-//        RedisClusterConfiguration conf = new RedisClusterConfiguration();
+//        RedisClusterConfiguration conf = new RedisClusterConfiguration(); // Cluster 로 사용하려면 RedisClusterConfiguration 을 사용
         RedisStandaloneConfiguration conf = new RedisStandaloneConfiguration();
         conf.setHostName(this.host);
         conf.setPort(this.port);
